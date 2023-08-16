@@ -1,0 +1,20 @@
+Problem statement: Aisle has millions of users from over 150 countries. Each user gets 10 free daily
+Likes. Unused Likes are not carried forward to the next day. We must refresh the number of daily Likes 
+at 12:00 pm according to the user's local time.
+
+How would you go about doing this in a scalable way? No need to write code, simply explain
+to us in theory the backend logic in your own words.
+
+Solution: 
+	Steps for implementing this task in a scalable way.
+	
+	1. Utilize a database to store necessary user data, including usernames, IDs, timezones, and other identification details.
+	
+	2. Keep a record of each user's likes usage, including the users they've liked and the remaining likes.
+	
+	3. Create an automated task that manages the daily likes refresh process. This task will use stored user data to determine when and how to reset each user's free like.
+	
+	4. Make sure the automated task accounts for each user's local timezone. This guarantees that likes are refreshed at 12:00 pm in their respective local times.
+	
+	5. Include a validation step within the automation task to confirm whether any users remain for the likes refresh. This prevents unnecessary processing if all users have already had their likes reset.
+	

@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		561EC6892A8B874800A4962F /* ProfileData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561EC6882A8B874800A4962F /* ProfileData.swift */; };
+		561EC68C2A8BF52700A4962F /* InviteProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561EC68B2A8BF52700A4962F /* InviteProfileView.swift */; };
+		561EC6902A8BF5B400A4962F /* LikedProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561EC68F2A8BF5B400A4962F /* LikedProfileCell.swift */; };
+		564EC5A12A8A4BC200793EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EC5A02A8A4BC200793EC5 /* AppDelegate.swift */; };
+		564EC5A32A8A4BC200793EC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EC5A22A8A4BC200793EC5 /* SceneDelegate.swift */; };
+		564EC5A52A8A4BC200793EC5 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EC5A42A8A4BC200793EC5 /* MainTabBarViewController.swift */; };
+		564EC5AA2A8A4BC300793EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 564EC5A92A8A4BC300793EC5 /* Assets.xcassets */; };
+		564EC5AD2A8A4BC300793EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 564EC5AB2A8A4BC300793EC5 /* LaunchScreen.storyboard */; };
+		564EC5BA2A8A4DA300793EC5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EC5B92A8A4DA300793EC5 /* APIService.swift */; };
+		564EC5BD2A8A4FF500793EC5 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EC5BC2A8A4FF500793EC5 /* NetworkModel.swift */; };
+		564EC5BF2A8A528100793EC5 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EC5BE2A8A528100793EC5 /* DiscoverViewController.swift */; };
+		564EC5C12A8A529700793EC5 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EC5C02A8A529700793EC5 /* NotesViewController.swift */; };
+		564EC5C32A8A52AB00793EC5 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EC5C22A8A52AB00793EC5 /* MatchesViewController.swift */; };
+		564EC5C52A8A52B700793EC5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EC5C42A8A52B700793EC5 /* ProfileViewController.swift */; };
+		564EC5C82A8A5F0900793EC5 /* PhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EC5C72A8A5F0900793EC5 /* PhoneNumberViewController.swift */; };
+		564EC5CA2A8A7D3800793EC5 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EC5C92A8A7D3800793EC5 /* OTPViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		561EC6882A8B874800A4962F /* ProfileData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileData.swift; sourceTree = "<group>"; };
+		561EC68B2A8BF52700A4962F /* InviteProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteProfileView.swift; sourceTree = "<group>"; };
+		561EC68F2A8BF5B400A4962F /* LikedProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedProfileCell.swift; sourceTree = "<group>"; };
+		564EC59D2A8A4BC200793EC5 /* MeetPeople.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetPeople.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		564EC5A02A8A4BC200793EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		564EC5A22A8A4BC200793EC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		564EC5A42A8A4BC200793EC5 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		564EC5A92A8A4BC300793EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		564EC5AC2A8A4BC300793EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		564EC5AE2A8A4BC300793EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		564EC5B92A8A4DA300793EC5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		564EC5BC2A8A4FF500793EC5 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		564EC5BE2A8A528100793EC5 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		564EC5C02A8A529700793EC5 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		564EC5C22A8A52AB00793EC5 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
+		564EC5C42A8A52B700793EC5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		564EC5C72A8A5F0900793EC5 /* PhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberViewController.swift; sourceTree = "<group>"; };
+		564EC5C92A8A7D3800793EC5 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		564EC59A2A8A4BC200793EC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		561EC68A2A8BF31200A4962F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				561EC68B2A8BF52700A4962F /* InviteProfileView.swift */,
+				561EC68F2A8BF5B400A4962F /* LikedProfileCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		564EC5942A8A4BC200793EC5 = {
+			isa = PBXGroup;
+			children = (
+				564EC59F2A8A4BC200793EC5 /* MeetPeople */,
+				564EC5B82A8A4D7600793EC5 /* Network Manager */,
+				564EC5B42A8A4CE800793EC5 /* Resources */,
+				564EC59E2A8A4BC200793EC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		564EC59E2A8A4BC200793EC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				564EC59D2A8A4BC200793EC5 /* MeetPeople.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		564EC59F2A8A4BC200793EC5 /* MeetPeople */ = {
+			isa = PBXGroup;
+			children = (
+				564EC5BB2A8A4F8700793EC5 /* Models */,
+				561EC68A2A8BF31200A4962F /* Views */,
+				564EC5B52A8A4D3C00793EC5 /* ViewControllers */,
+				564EC5A92A8A4BC300793EC5 /* Assets.xcassets */,
+				564EC5AB2A8A4BC300793EC5 /* LaunchScreen.storyboard */,
+				564EC5AE2A8A4BC300793EC5 /* Info.plist */,
+			);
+			path = MeetPeople;
+			sourceTree = "<group>";
+		};
+		564EC5B42A8A4CE800793EC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				564EC5A02A8A4BC200793EC5 /* AppDelegate.swift */,
+				564EC5A22A8A4BC200793EC5 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		564EC5B52A8A4D3C00793EC5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				564EC5C62A8A5C5B00793EC5 /* Authentication */,
+				564EC5B72A8A4D5B00793EC5 /* Secondary */,
+				564EC5B62A8A4D4F00793EC5 /* Primary */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		564EC5B62A8A4D4F00793EC5 /* Primary */ = {
+			isa = PBXGroup;
+			children = (
+				564EC5A42A8A4BC200793EC5 /* MainTabBarViewController.swift */,
+				564EC5BE2A8A528100793EC5 /* DiscoverViewController.swift */,
+				564EC5C02A8A529700793EC5 /* NotesViewController.swift */,
+				564EC5C22A8A52AB00793EC5 /* MatchesViewController.swift */,
+				564EC5C42A8A52B700793EC5 /* ProfileViewController.swift */,
+			);
+			path = Primary;
+			sourceTree = "<group>";
+		};
+		564EC5B72A8A4D5B00793EC5 /* Secondary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Secondary;
+			sourceTree = "<group>";
+		};
+		564EC5B82A8A4D7600793EC5 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				564EC5B92A8A4DA300793EC5 /* APIService.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		564EC5BB2A8A4F8700793EC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				564EC5BC2A8A4FF500793EC5 /* NetworkModel.swift */,
+				561EC6882A8B874800A4962F /* ProfileData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		564EC5C62A8A5C5B00793EC5 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				564EC5C72A8A5F0900793EC5 /* PhoneNumberViewController.swift */,
+				564EC5C92A8A7D3800793EC5 /* OTPViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		564EC59C2A8A4BC200793EC5 /* MeetPeople */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 564EC5B12A8A4BC300793EC5 /* Build configuration list for PBXNativeTarget "MeetPeople" */;
+			buildPhases = (
+				564EC5992A8A4BC200793EC5 /* Sources */,
+				564EC59A2A8A4BC200793EC5 /* Frameworks */,
+				564EC59B2A8A4BC200793EC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeetPeople;
+			productName = MeetPeople;
+			productReference = 564EC59D2A8A4BC200793EC5 /* MeetPeople.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		564EC5952A8A4BC200793EC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					564EC59C2A8A4BC200793EC5 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 564EC5982A8A4BC200793EC5 /* Build configuration list for PBXProject "MeetPeople" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 564EC5942A8A4BC200793EC5;
+			productRefGroup = 564EC59E2A8A4BC200793EC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				564EC59C2A8A4BC200793EC5 /* MeetPeople */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		564EC59B2A8A4BC200793EC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564EC5AD2A8A4BC300793EC5 /* LaunchScreen.storyboard in Resources */,
+				564EC5AA2A8A4BC300793EC5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		564EC5992A8A4BC200793EC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564EC5A52A8A4BC200793EC5 /* MainTabBarViewController.swift in Sources */,
+				564EC5A12A8A4BC200793EC5 /* AppDelegate.swift in Sources */,
+				564EC5C82A8A5F0900793EC5 /* PhoneNumberViewController.swift in Sources */,
+				564EC5C32A8A52AB00793EC5 /* MatchesViewController.swift in Sources */,
+				564EC5A32A8A4BC200793EC5 /* SceneDelegate.swift in Sources */,
+				561EC6902A8BF5B400A4962F /* LikedProfileCell.swift in Sources */,
+				564EC5C12A8A529700793EC5 /* NotesViewController.swift in Sources */,
+				564EC5CA2A8A7D3800793EC5 /* OTPViewController.swift in Sources */,
+				564EC5BF2A8A528100793EC5 /* DiscoverViewController.swift in Sources */,
+				564EC5C52A8A52B700793EC5 /* ProfileViewController.swift in Sources */,
+				564EC5BD2A8A4FF500793EC5 /* NetworkModel.swift in Sources */,
+				564EC5BA2A8A4DA300793EC5 /* APIService.swift in Sources */,
+				561EC6892A8B874800A4962F /* ProfileData.swift in Sources */,
+				561EC68C2A8BF52700A4962F /* InviteProfileView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		564EC5AB2A8A4BC300793EC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				564EC5AC2A8A4BC300793EC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		564EC5AF2A8A4BC300793EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		564EC5B02A8A4BC300793EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		564EC5B22A8A4BC300793EC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeetPeople/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.com.MeetPeople;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		564EC5B32A8A4BC300793EC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MeetPeople/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = personal.com.MeetPeople;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		564EC5982A8A4BC200793EC5 /* Build configuration list for PBXProject "MeetPeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				564EC5AF2A8A4BC300793EC5 /* Debug */,
+				564EC5B02A8A4BC300793EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		564EC5B12A8A4BC300793EC5 /* Build configuration list for PBXNativeTarget "MeetPeople" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				564EC5B22A8A4BC300793EC5 /* Debug */,
+				564EC5B32A8A4BC300793EC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 564EC5952A8A4BC200793EC5 /* Project object */;
+}
