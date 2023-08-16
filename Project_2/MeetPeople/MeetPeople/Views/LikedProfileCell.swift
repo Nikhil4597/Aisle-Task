@@ -76,7 +76,7 @@ extension LikedProfileCell {
 // MARK: - Private methods
 extension LikedProfileCell {
     private func setupUIView() {
-        layer.cornerRadius = 5
+        contentView.layer.cornerRadius = 5
         profileImageView.layer.cornerRadius = 5
         contentView.addSubview(profileImageView)
         contentView.addSubview(blurView)

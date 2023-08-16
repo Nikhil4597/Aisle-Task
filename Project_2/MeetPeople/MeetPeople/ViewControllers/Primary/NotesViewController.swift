@@ -8,12 +8,9 @@
 import UIKit
 
 class NotesViewController: UIViewController {
-    struct Constraints {
-        static let numberOfItemsInRow: CGFloat = 2
-        static let spacing: CGFloat = 20
-        static let sectionInsets = UIEdgeInsets(top: 20, left: 5, bottom: 10, right: 5)
-    }
-    
+    private let numberOfItemsInRow: CGFloat = 2
+    private let spacing: CGFloat = 20
+    private let sectionInsets = UIEdgeInsets(top: 20, left: 5, bottom: 10, right: 5)
     private let numberOfSection = 1
     
     private let titleLabel: UILabel = {
@@ -67,8 +64,6 @@ class NotesViewController: UIViewController {
 // MARK: UICollectionViewDataSource
 extension NotesViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("Profile model in numberof Item \(profileModel)")
-        print("Number of items: \(self.profileModel?.likes.profiles.count ?? 0)")
         return self.profileModel?.likes.profiles.count ?? 0
     }
     
@@ -114,14 +109,14 @@ extension NotesViewController: UICollectionViewDelegate {
 // MARK: UICollectionViewDelegateFlowLayout
 extension NotesViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let availableWidth = collectionView.bounds.width - Constraints.sectionInsets.left - Constraints.sectionInsets.right - (Constraints.numberOfItemsInRow - 1) * Constraints.spacing
-        let cellWidth = availableWidth/Constraints.numberOfItemsInRow
-        return CGSize(width: cellWidth, height: 300)
+        let availableWidth = collectionView.bounds.width - sectionInsets.left - sectionInsets.right - (numberOfItemsInRow - 1) * spacing
+        let cellWidth = availableWidth/numberOfItemsInRow
+        return CGSize(width: cellWidth, height: 250)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         let headerWidth = collectionView.bounds.width
-        let headerHeight: CGFloat = 572
+        let headerHeight: CGFloat = 480
         return CGSize(width: headerWidth, height: headerHeight)
     }
 }

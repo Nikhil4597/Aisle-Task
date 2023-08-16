@@ -95,7 +95,8 @@ class InviteProfileView: UICollectionReusableView {
             profileImageView.topAnchor.constraint(equalTo: headerTitle.bottomAnchor, constant: 12),
             profileImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: leadingArcherConstant/2),
             profileImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -leadingArcherConstant/2),
-            profileImageView.heightAnchor.constraint(equalToConstant: 572)
+            profileImageView.heightAnchor.constraint(equalToConstant: 350)
+            
         ])
         
         // Primary image label constraints
@@ -126,8 +127,9 @@ class InviteProfileView: UICollectionReusableView {
         
         // upgrade button constraints
         NSLayoutConstraint.activate([
+            upgradeButton.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 31),
             upgradeButton.leadingAnchor.constraint(equalTo: premiumSecondaryLabel.trailingAnchor, constant: 24),
-            upgradeButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 15)
+            upgradeButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -15)
         ])
     }
 }
@@ -195,15 +197,9 @@ extension InviteProfileView {
     
     private func configurePremiumView(isPremiumAccount: Bool) {
         if isPremiumAccount {
-            premiumPrimaryLabel.frame = .zero
-            premiumSecondaryLabel.frame = .zero
-            upgradeButton.frame = .zero
-            
-            let subviews = [premiumPrimaryLabel, premiumSecondaryLabel, upgradeButton]
-            
-            for subview in subviews {
-                subview.removeFromSuperview()
-            }
+            premiumPrimaryLabel.alpha = 0
+            premiumSecondaryLabel.alpha = 0
+            upgradeButton.alpha = 0
         }
     }
 }
