@@ -25,7 +25,8 @@ class InviteProfileView: UICollectionReusableView {
     private let profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 5
+        imageView.layer.cornerRadius = 20
+        imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -74,7 +75,7 @@ class InviteProfileView: UICollectionReusableView {
         button.titleLabel?.textAlignment = .center
         button.setTitleColor(.black, for: .normal)
         button.layer.backgroundColor = UIColor(red: 0.976, green: 0.796, blue: 0.063, alpha: 1).cgColor
-        button.layer.cornerRadius = 20
+        button.layer.cornerRadius = 18
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()

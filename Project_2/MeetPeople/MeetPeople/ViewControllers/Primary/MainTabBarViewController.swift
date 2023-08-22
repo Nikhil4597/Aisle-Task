@@ -32,7 +32,6 @@ class MainTabBarViewController: UITabBarController {
             case CurrentIndex.Notes.rawValue:
                 updateNoteViewController(index: selectedIndex)
             default:
-                print("Unknown index")
                 break
             }
         }
