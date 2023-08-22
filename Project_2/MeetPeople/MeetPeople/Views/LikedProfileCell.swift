@@ -15,6 +15,8 @@ class LikedProfileCell: UICollectionViewCell {
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 20
+        imageView.clipsToBounds = true
         return imageView
     }()
     
@@ -22,7 +24,9 @@ class LikedProfileCell: UICollectionViewCell {
         let blurEffect = UIBlurEffect(style: .light)
         let blurView = UIVisualEffectView(effect: blurEffect)
         blurView.translatesAutoresizingMaskIntoConstraints = false
-        blurView.alpha = 0
+        blurView.layer.cornerRadius = 5
+        blurView.clipsToBounds = true
+        blurView.alpha = 1
         return blurView
     }()
     
@@ -65,7 +69,7 @@ extension LikedProfileCell {
         setupUIView()
         
         if canSeeProfile {
-            blurView.alpha = 1
+            blurView.alpha = 0
         }
         
         configureProfileImage(imageString: profile.avatar)
@@ -76,7 +80,6 @@ extension LikedProfileCell {
 // MARK: - Private methods
 extension LikedProfileCell {
     private func setupUIView() {
-        contentView.layer.cornerRadius = 5
         profileImageView.layer.cornerRadius = 5
         contentView.addSubview(profileImageView)
         contentView.addSubview(blurView)

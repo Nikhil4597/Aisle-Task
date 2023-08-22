@@ -110,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				564EC5C62A8A5C5B00793EC5 /* Authentication */,
-				564EC5B72A8A4D5B00793EC5 /* Secondary */,
 				564EC5B62A8A4D4F00793EC5 /* Primary */,
 			);
 			path = ViewControllers;
@@ -126,13 +125,6 @@
 				564EC5C42A8A52B700793EC5 /* ProfileViewController.swift */,
 			);
 			path = Primary;
-			sourceTree = "<group>";
-		};
-		564EC5B72A8A4D5B00793EC5 /* Secondary */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Secondary;
 			sourceTree = "<group>";
 		};
 		564EC5B82A8A4D7600793EC5 /* Network Manager */ = {

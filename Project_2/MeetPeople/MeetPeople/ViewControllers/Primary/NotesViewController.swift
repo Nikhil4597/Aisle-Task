@@ -10,7 +10,7 @@ import UIKit
 class NotesViewController: UIViewController {
     private let numberOfItemsInRow: CGFloat = 2
     private let spacing: CGFloat = 20
-    private let sectionInsets = UIEdgeInsets(top: 20, left: 5, bottom: 10, right: 5)
+    private let sectionInsets = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
     private let numberOfSection = 1
     
     private let titleLabel: UILabel = {
@@ -53,8 +53,8 @@ class NotesViewController: UIViewController {
     private func viewConstraints() {
         // Collection view constrainst
         NSLayoutConstraint.activate([
-            collectionView.leadingAnchor.constraint(equalTo:view.leadingAnchor),
-            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            collectionView.leadingAnchor.constraint(equalTo:view.leadingAnchor, constant: 10),
+            collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             collectionView.topAnchor.constraint(equalTo: view.topAnchor),
             collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
         ])
